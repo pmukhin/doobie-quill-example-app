@@ -17,26 +17,10 @@ class DoobieProductRepository[F[_]](xa: Transactor[F])(implicit
 
   import doobie.implicits._
 
-  val t = Long :: String :: HNil
-
-  override def findById(id: Long): F[Option[Product]] = {
-    println(s"from fiber: ${scala.util.Random.nextLong()}")
+  override def findById(id: Long): F[Option[Product]] =
     sql"SELECT * FROM Products WHERE id = $id"
       .query[Product]
       .option
       .transact[F](xa)
-  }
-
-  def findByIdShort(id: Long): F[Option[t.type]] =
-    sql"SELECT id, title FROM Products WHERE id = $id"
-      .query[t.type]
-      .option
-      .transact[F](xa)
-
-  val res = F.map(findByIdShort(5)) { o =>
-    o.map { p =>
-      Generic[ProductShort].to(p)
-    }
-  }
 
 }
