@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  mariadb:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_DATABASE: doobie-pp
+      MYSQL_USER: doobie
+      MYSQL_PASSWORD: helloworld
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./data:/usr/data"

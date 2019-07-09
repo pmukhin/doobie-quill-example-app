@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="doobie-pp_2.12"
+		revision="0.1"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190709152007"/>
+	<dependencies>
+		<module organisation="org.tpolecat" name="doobie-scalatest_2.12">
+			<revision name="0.7.0" status="release" pubdate="20190526132853" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tpolecat/doobie" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3451" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-scalatest_2.12/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tpolecat/doobie-scalatest_2.12/0.7.0/doobie-scalatest_2.12-0.7.0.pom"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="doobie-scalatest_2.12" type="jar" ext="jar" status="no" details="" size="11803" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-scalatest_2.12/jars/doobie-scalatest_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tpolecat/doobie-scalatest_2.12/0.7.0/doobie-scalatest_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.12">
+			<revision name="3.0.7" status="release" pubdate="20190319101517" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4732" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scalatest/scalatest_2.12/ivy-3.0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-scalatest_2.12" conf="default, compile, runtime, master" rev="3.0.7" rev-constraint-default="3.0.7" rev-constraint-dynamic="3.0.7" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="scalatest_2.12" type="bundle" ext="jar" status="no" details="" size="7101411" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.12">
+			<revision name="3.0.7" status="release" pubdate="20190319101402" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3122" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scalactic/scalactic_2.12/ivy-3.0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.7/scalactic_2.12-3.0.7.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="3.0.7" rev-constraint-default="3.0.7" rev-constraint-dynamic="3.0.7" callerrev="3.0.7"/>
+				<artifacts>
+					<artifact name="scalactic_2.12" type="bundle" ext="jar" status="no" details="" size="718332" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.7/scalactic_2.12-3.0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tpolecat" name="doobie-specs2_2.12">
+			<revision name="0.7.0" status="release" pubdate="20190526132751" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tpolecat/doobie" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="27">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3327" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-specs2_2.12/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tpolecat/doobie-specs2_2.12/0.7.0/doobie-specs2_2.12-0.7.0.pom"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="doobie-specs2_2.12" type="jar" ext="jar" status="no" details="" size="17733" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-specs2_2.12/jars/doobie-specs2_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tpolecat/doobie-specs2_2.12/0.7.0/doobie-specs2_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tpolecat" name="doobie-quill_2.12">
+			<revision name="0.7.0" status="release" pubdate="20190526132957" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tpolecat/doobie" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3567" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-quill_2.12/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tpolecat/doobie-quill_2.12/0.7.0/doobie-quill_2.12-0.7.0.pom"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="doobie-quill_2.12" type="jar" ext="jar" status="no" details="" size="89971" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-quill_2.12/jars/doobie-quill_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tpolecat/doobie-quill_2.12/0.7.0/doobie-quill_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.getquill" name="quill-jdbc_2.12">
+			<revision name="3.1.0" status="release" pubdate="20190307173058" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/getquill/quill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache License 2.0" url="https://raw.githubusercontent.com/getquill/quill/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4258" time="0" location="/Users/pavel.mukhin/.ivy2/cache/io.getquill/quill-jdbc_2.12/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/getquill/quill-jdbc_2.12/3.1.0/quill-jdbc_2.12-3.1.0.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-quill_2.12" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="quill-jdbc_2.12" type="jar" ext="jar" status="no" details="" size="103319" time="0" location="/Users/pavel.mukhin/.ivy2/cache/io.getquill/quill-jdbc_2.12/jars/quill-jdbc_2.12-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/getquill/quill-jdbc_2.12/3.1.0/quill-jdbc_2.12-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.getquill" name="quill-sql_2.12">
+			<revision name="3.1.0" status="release" pubdate="20190307171613" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/getquill/quill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache License 2.0" url="https://raw.githubusercontent.com/getquill/quill/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3377" time="0" location="/Users/pavel.mukhin/.ivy2/cache/io.getquill/quill-sql_2.12/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/getquill/quill-sql_2.12/3.1.0/quill-sql_2.12-3.1.0.pom"/>
+				<caller organisation="io.getquill" name="quill-jdbc_2.12" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="quill-sql_2.12" type="jar" ext="jar" status="no" details="" size="249603" time="0" location="/Users/pavel.mukhin/.ivy2/cache/io.getquill/quill-sql_2.12/jars/quill-sql_2.12-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/getquill/quill-sql_2.12/3.1.0/quill-sql_2.12-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.getquill" name="quill-core_2.12">
+			<revision name="3.1.0" status="release" pubdate="20190307170322" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/getquill/quill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache License 2.0" url="https://raw.githubusercontent.com/getquill/quill/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3682" time="0" location="/Users/pavel.mukhin/.ivy2/cache/io.getquill/quill-core_2.12/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/getquill/quill-core_2.12/3.1.0/quill-core_2.12-3.1.0.pom"/>
+				<caller organisation="io.getquill" name="quill-sql_2.12" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="quill-core_2.12" type="jar" ext="jar" status="no" details="" size="2500101" time="0" location="/Users/pavel.mukhin/.ivy2/cache/io.getquill/quill-core_2.12/jars/quill-core_2.12-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/getquill/quill-core_2.12/3.1.0/quill-core_2.12-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.scala-logging" name="scala-logging_2.12">
+			<revision name="3.9.0" status="release" pubdate="20180411175603" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/scala-logging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3355" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.typesafe.scala-logging/scala-logging_2.12/ivy-3.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.12/3.9.0/scala-logging_2.12-3.9.0.pom"/>
+				<caller organisation="io.getquill" name="quill-core_2.12" conf="compile, runtime" rev="3.9.0" rev-constraint-default="3.9.0" rev-constraint-dynamic="3.9.0" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="scala-logging_2.12" type="bundle" ext="jar" status="no" details="" size="54709" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.typesafe.scala-logging/scala-logging_2.12/bundles/scala-logging_2.12-3.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.12/3.9.0/scala-logging_2.12-3.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.3" status="release" pubdate="20180221220821" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2874" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.typesafe/config/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.pom"/>
+				<caller organisation="io.getquill" name="quill-core_2.12" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="286090" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.typesafe/config/bundles/config-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalamacros" name="resetallattrs_2.12">
+			<revision name="1.0.0" status="release" pubdate="20161102185217" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/resetallattrs" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
+				<metadata-artifact status="no" details="" size="2916" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scalamacros/resetallattrs_2.12/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalamacros/resetallattrs_2.12/1.0.0/resetallattrs_2.12-1.0.0.pom"/>
+				<caller organisation="io.getquill" name="quill-sql_2.12" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.1.0"/>
+				<caller organisation="io.getquill" name="quill-jdbc_2.12" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.1.0"/>
+				<caller organisation="io.getquill" name="quill-core_2.12" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="resetallattrs_2.12" type="jar" ext="jar" status="no" details="" size="17068" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scalamacros/resetallattrs_2.12/jars/resetallattrs_2.12-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalamacros/resetallattrs_2.12/1.0.0/resetallattrs_2.12-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tpolecat" name="doobie-hikari_2.12">
+			<revision name="0.7.0" status="release" pubdate="20190526132919" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tpolecat/doobie" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3447" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-hikari_2.12/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tpolecat/doobie-hikari_2.12/0.7.0/doobie-hikari_2.12-0.7.0.pom"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="doobie-hikari_2.12" type="jar" ext="jar" status="no" details="" size="9098" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-hikari_2.12/jars/doobie-hikari_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tpolecat/doobie-hikari_2.12/0.7.0/doobie-hikari_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.zaxxer" name="HikariCP">
+			<revision name="3.3.1" status="release" pubdate="20190208120239" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8026" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.zaxxer/HikariCP/ivy-3.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/3.3.1/HikariCP-3.3.1.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-hikari_2.12" conf="default, compile, runtime, master" rev="3.3.1" rev-constraint-default="3.3.1" rev-constraint-dynamic="3.3.1" callerrev="0.7.0"/>
+				<caller organisation="io.getquill" name="quill-jdbc_2.12" conf="compile, runtime" rev="3.3.1" rev-constraint-default="3.3.1" rev-constraint-dynamic="3.3.1" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="HikariCP" type="bundle" ext="jar" status="no" details="" size="139168" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-3.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/3.3.1/HikariCP-3.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316123632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5188" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="file:////Users/pavel.mukhin/.sbt/preloaded/org.slf4j/slf4j-api/1.7.25/ivys/ivy.xml"/>
+				<caller organisation="com.zaxxer" name="HikariCP" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.3.1"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.9.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41203" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar">
+						<origin-location is-local="false" location="file:////Users/pavel.mukhin/.sbt/preloaded/org.slf4j/slf4j-api/1.7.25/jars/slf4j-api.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.16" status="release" pubdate="20150508185537" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2538" time="0" location="/Users/pavel.mukhin/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.16/mysql-connector-java-5.1.16.pom"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="5.1.16" rev-constraint-default="5.1.16" rev-constraint-dynamic="5.1.16" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="786484" time="0" location="/Users/pavel.mukhin/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.16.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.16/mysql-connector-java-5.1.16.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tpolecat" name="doobie-core_2.12">
+			<revision name="0.7.0" status="release" pubdate="20190526132759" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tpolecat/doobie" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3739" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-core_2.12/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tpolecat/doobie-core_2.12/0.7.0/doobie-core_2.12-0.7.0.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-hikari_2.12" conf="default, compile, runtime, master" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.7.0"/>
+				<caller organisation="org.tpolecat" name="doobie-scalatest_2.12" conf="default, compile, runtime, master" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.7.0"/>
+				<caller organisation="org.tpolecat" name="doobie-quill_2.12" conf="default, compile, runtime, master" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.7.0"/>
+				<caller organisation="org.tpolecat" name="doobie-specs2_2.12" conf="default, compile, runtime, master" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.7.0"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="doobie-core_2.12" type="jar" ext="jar" status="no" details="" size="797200" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-core_2.12/jars/doobie-core_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tpolecat/doobie-core_2.12/0.7.0/doobie-core_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="sourcecode_2.12">
+			<revision name="0.1.5" status="release" pubdate="20180924212010" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/sourcecode" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="MIT" url="http://www.opensource.org/licenses/mit-license.html"/>
+				<metadata-artifact status="no" details="" size="2962" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.lihaoyi/sourcecode_2.12/ivy-0.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.5/sourcecode_2.12-0.1.5.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-core_2.12" conf="default, compile, runtime, master" rev="0.1.5" rev-constraint-default="0.1.5" rev-constraint-dynamic="0.1.5" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="sourcecode_2.12" type="bundle" ext="jar" status="no" details="" size="111520" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.lihaoyi/sourcecode_2.12/bundles/sourcecode_2.12-0.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.5/sourcecode_2.12-0.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.12">
+			<revision name="2.3.3" status="release" pubdate="20171231225153" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="13">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3230" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.chuusai/shapeless_2.12/ivy-2.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.3/shapeless_2.12-2.3.3.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-core_2.12" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.7.0"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="shapeless_2.12" type="bundle" ext="jar" status="no" details="" size="3243337" time="0" location="/Users/pavel.mukhin/.ivy2/cache/com.chuusai/shapeless_2.12/bundles/shapeless_2.12-2.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.3/shapeless_2.12-2.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="macro-compat_2.12">
+			<revision name="1.1.1" status="release" pubdate="20161102164258" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/macro-compat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/macro-compat_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.pom"/>
+				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.3.3"/>
+				<artifacts>
+					<artifact name="macro-compat_2.12" type="jar" ext="jar" status="no" details="" size="3180" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tpolecat" name="doobie-free_2.12">
+			<revision name="0.7.0" status="release" pubdate="20190526132733" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tpolecat/doobie" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3620" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-free_2.12/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tpolecat/doobie-free_2.12/0.7.0/doobie-free_2.12-0.7.0.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-core_2.12" conf="default, compile, runtime, master" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="doobie-free_2.12" type="jar" ext="jar" status="no" details="" size="3771039" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.tpolecat/doobie-free_2.12/jars/doobie-free_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tpolecat/doobie-free_2.12/0.7.0/doobie-free_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-free_2.12">
+			<revision name="1.6.0" status="release" pubdate="20190201025402" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3211" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-free_2.12/ivy-1.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-free_2.12/1.6.0/cats-free_2.12-1.6.0.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="cats-free_2.12" type="jar" ext="jar" status="no" details="" size="243300" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-free_2.12/jars/cats-free_2.12-1.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-free_2.12/1.6.0/cats-free_2.12-1.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="co.fs2" name="fs2-core_2.12">
+			<revision name="1.0.4" status="release" pubdate="20190301015116" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/functional-streams-for-scala/fs2" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3250" time="0" location="/Users/pavel.mukhin/.ivy2/cache/co.fs2/fs2-core_2.12/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/co/fs2/fs2-core_2.12/1.0.4/fs2-core_2.12-1.0.4.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="fs2-core_2.12" type="jar" ext="jar" status="no" details="" size="824573" time="0" location="/Users/pavel.mukhin/.ivy2/cache/co.fs2/fs2-core_2.12/jars/fs2-core_2.12-1.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/co/fs2/fs2-core_2.12/1.0.4/fs2-core_2.12-1.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scodec" name="scodec-bits_2.12">
+			<revision name="1.1.9" status="release" pubdate="20190120070343" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scodec/scodec-bits" extra-info.apiURL="http://scodec.org/api/scodec-bits/1.1.9/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Three-clause BSD-style" url="https://github.com/scodec/scodec-bits/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2990" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scodec/scodec-bits_2.12/ivy-1.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scodec/scodec-bits_2.12/1.1.9/scodec-bits_2.12-1.1.9.pom"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="1.1.9" rev-constraint-default="1.1.9" rev-constraint-dynamic="1.1.9" callerrev="1.0.4"/>
+				<artifacts>
+					<artifact name="scodec-bits_2.12" type="jar" ext="jar" status="no" details="" size="245256" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scodec/scodec-bits_2.12/jars/scodec-bits_2.12-1.1.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scodec/scodec-bits_2.12/1.1.9/scodec-bits_2.12-1.1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-collection-compat_2.12">
+			<revision name="0.3.0" status="release" pubdate="20190209044515" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2819" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/0.3.0/scala-collection-compat_2.12-0.3.0.pom"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="1.0.4"/>
+				<artifacts>
+					<artifact name="scala-collection-compat_2.12" type="bundle" ext="jar" status="no" details="" size="100729" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/bundles/scala-collection-compat_2.12-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/0.3.0/scala-collection-compat_2.12-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.specs2" name="specs2-core_2.12">
+			<revision name="4.5.1" status="release" pubdate="20190311185425" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://specs2.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="MIT-style" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3439" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-core_2.12/ivy-4.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-core_2.12/4.5.1/specs2-core_2.12-4.5.1.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-specs2_2.12" conf="default, compile, runtime, master" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="specs2-core_2.12" type="jar" ext="jar" status="no" details="" size="1403236" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-core_2.12/jars/specs2-core_2.12-4.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-core_2.12/4.5.1/specs2-core_2.12-4.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-interface">
+			<revision name="1.0" status="release" pubdate="20130629064435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2589" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
+				<caller organisation="org.specs2" name="specs2-core_2.12" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="14755" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.specs2" name="specs2-matcher_2.12">
+			<revision name="4.5.1" status="release" pubdate="20190311185606" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://specs2.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="MIT-style" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2800" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-matcher_2.12/ivy-4.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-matcher_2.12/4.5.1/specs2-matcher_2.12-4.5.1.pom"/>
+				<caller organisation="org.specs2" name="specs2-core_2.12" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="specs2-matcher_2.12" type="jar" ext="jar" status="no" details="" size="1637751" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-matcher_2.12/jars/specs2-matcher_2.12-4.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-matcher_2.12/4.5.1/specs2-matcher_2.12-4.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.specs2" name="specs2-common_2.12">
+			<revision name="4.5.1" status="release" pubdate="20190311185458" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://specs2.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="MIT-style" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3391" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-common_2.12/ivy-4.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-common_2.12/4.5.1/specs2-common_2.12-4.5.1.pom"/>
+				<caller organisation="org.specs2" name="specs2-matcher_2.12" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="specs2-common_2.12" type="jar" ext="jar" status="no" details="" size="2076756" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-common_2.12/jars/specs2-common_2.12-4.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-common_2.12/4.5.1/specs2-common_2.12-4.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.1.1" status="release" pubdate="20180927013248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3266" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.1/scala-xml_2.12-1.1.1.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="3.0.7"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="3.0.7"/>
+				<caller organisation="org.specs2" name="specs2-common_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="no" details="" size="553347" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.1/scala-xml_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.1.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.1.1"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="3.0.7"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="3.0.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
+			<revision name="1.1.1" status="release" pubdate="20180609090928" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2929" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.pom"/>
+				<caller organisation="org.specs2" name="specs2-common_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" status="no" details="" size="226573" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.specs2" name="specs2-fp_2.12">
+			<revision name="4.5.1" status="release" pubdate="20190311185341" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://specs2.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="MIT-style" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2638" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-fp_2.12/ivy-4.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-fp_2.12/4.5.1/specs2-fp_2.12-4.5.1.pom"/>
+				<caller organisation="org.specs2" name="specs2-common_2.12" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="specs2-fp_2.12" type="jar" ext="jar" status="no" details="" size="222893" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.specs2/specs2-fp_2.12/jars/specs2-fp_2.12-4.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-fp_2.12/4.5.1/specs2-fp_2.12-4.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-effect_2.12">
+			<revision name="1.3.1" status="release" pubdate="20190526084619" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://typelevel.org/cats-effect/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="6">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3287" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-effect_2.12/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-effect_2.12/1.3.1/cats-effect_2.12-1.3.1.pom"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0.4"/>
+				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.7.0"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="cats-effect_2.12" type="jar" ext="jar" status="no" details="" size="917690" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-effect_2.12/jars/cats-effect_2.12-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-effect_2.12/1.3.1/cats-effect_2.12-1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.3.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.3.1"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0.4"/>
+				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.7.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.2.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="1.3.1"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="1.0.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-core_2.12">
+			<revision name="2.0.0-M1" status="release" pubdate="20190425121351" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3348" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-core_2.12/ivy-2.0.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.0.0-M1/cats-core_2.12-2.0.0-M1.pom"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.0.4"/>
+				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.6.0"/>
+				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.7.0"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="2.0.0-M1" rev-constraint-default="2.0.0-M1" rev-constraint-dynamic="2.0.0-M1" callerrev="0.1"/>
+				<caller organisation="org.typelevel" name="cats-effect_2.12" conf="default, compile, runtime, master" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="cats-core_2.12" type="jar" ext="jar" status="no" details="" size="4600557" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-core_2.12/jars/cats-core_2.12-2.0.0-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.0.0-M1/cats-core_2.12-2.0.0-M1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.0.0-M1"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.0.4"/>
+				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.6.0"/>
+				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.7.0"/>
+				<caller organisation="org.typelevel" name="cats-effect_2.12" conf="default, compile, runtime, master" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.3.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-kernel_2.12">
+			<revision name="2.0.0-M1" status="release" pubdate="20190425120521" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2906" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-kernel_2.12/ivy-2.0.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.0.0-M1/cats-kernel_2.12-2.0.0-M1.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="2.0.0-M1" rev-constraint-default="2.0.0-M1" rev-constraint-dynamic="2.0.0-M1" callerrev="2.0.0-M1"/>
+				<artifacts>
+					<artifact name="cats-kernel_2.12" type="jar" ext="jar" status="no" details="" size="3227274" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-kernel_2.12/jars/cats-kernel_2.12-2.0.0-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.0.0-M1/cats-kernel_2.12-2.0.0-M1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-macros_2.12">
+			<revision name="2.0.0-M1" status="release" pubdate="20190425120252" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2926" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-macros_2.12/ivy-2.0.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/2.0.0-M1/cats-macros_2.12-2.0.0-M1.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="2.0.0-M1" rev-constraint-default="2.0.0-M1" rev-constraint-dynamic="2.0.0-M1" callerrev="2.0.0-M1"/>
+				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.6.0"/>
+				<artifacts>
+					<artifact name="cats-macros_2.12" type="jar" ext="jar" status="no" details="" size="5253" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/cats-macros_2.12/jars/cats-macros_2.12-2.0.0-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/2.0.0-M1/cats-macros_2.12-2.0.0-M1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.0.0-M1"/>
+				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.6.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="machinist_2.12">
+			<revision name="0.6.7" status="release" pubdate="20190407204318" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/typelevel/machinist" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2785" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/machinist_2.12/ivy-0.6.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.7/machinist_2.12-0.6.7.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="0.6.7" rev-constraint-default="0.6.7" rev-constraint-dynamic="0.6.7" callerrev="2.0.0-M1"/>
+				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="0.6.6" rev-constraint-default="0.6.6" rev-constraint-dynamic="0.6.6" callerrev="1.6.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="0.6.7" rev-constraint-default="0.6.7" rev-constraint-dynamic="0.6.7" callerrev="2.0.0-M1"/>
+				<artifacts>
+					<artifact name="machinist_2.12" type="jar" ext="jar" status="no" details="" size="33786" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.7/machinist_2.12-0.6.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.6.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="0.6.7"/>
+				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="0.6.6" rev-constraint-default="0.6.6" rev-constraint-dynamic="0.6.6" callerrev="1.6.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.8" status="release" pubdate="20181204181524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2828" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.pom"/>
+				<caller organisation="org.tpolecat" name="doobie-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.7"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.9.0"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.7"/>
+				<caller organisation="org.specs2" name="specs2-common_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="4.5.1"/>
+				<caller organisation="io.getquill" name="quill-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.1.0"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.6.7"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3645095" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.8" status="release" pubdate="20181204181556" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.pom"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.1.1"/>
+				<caller organisation="org.scalamacros" name="resetallattrs_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.12.8"/>
+				<caller organisation="org.typelevel" name="cats-kernel_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.0.0-M1"/>
+				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.6.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.0.0-M1"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.9.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-collection-compat_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0"/>
+				<caller organisation="org.tpolecat" name="doobie-specs2_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="org.specs2" name="specs2-common_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="4.5.1"/>
+				<caller organisation="org.typelevel" name="cats-effect_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.3.1"/>
+				<caller organisation="io.getquill" name="quill-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.1.0"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.6.7"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.1.1"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.0.0-M1"/>
+				<caller organisation="org.tpolecat" name="doobie-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="org.specs2" name="specs2-fp_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="4.5.1"/>
+				<caller organisation="org.scodec" name="scodec-bits_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.1.9"/>
+				<caller organisation="io.getquill" name="quill-jdbc_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.1.0"/>
+				<caller organisation="org.tpolecat" name="doobie-scalatest_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.7"/>
+				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="org.specs2" name="specs2-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="4.5.1"/>
+				<caller organisation="org.tpolecat" name="doobie-quill_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="org.specs2" name="specs2-matcher_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="4.5.1"/>
+				<caller organisation="org.tpolecat" name="doobie-hikari_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.4"/>
+				<caller organisation="com.lihaoyi" name="sourcecode_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.5"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.7"/>
+				<caller organisation="io.getquill" name="quill-sql_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.1.0"/>
+				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.3.3"/>
+				<caller organisation="org.typelevel" name="macro-compat_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.1.1"/>
+				<caller organisation="default" name="doobie-pp_2.12" conf="test, compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5272591" time="0" location="/Users/pavel.mukhin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
