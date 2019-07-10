@@ -11,6 +11,9 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
 
+## Components
+Every component demonstrates a particular idea or a component:
+
 ### pp1 
 Simple select query, abstract repository algebra, generic effectful implementation, runnable app
 
@@ -22,3 +25,8 @@ Update queries
 
 ### pp4
 Fluent compile-time query builder using Quill and Doobie 
+
+## Links
+- https://tpolecat.github.io/doobie/ - Doobie official website
+- https://typelevel.org/cats/ - Cats official website
+- https://typelevel.org/cats-effect/ - Cats Effect official website
