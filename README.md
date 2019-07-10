@@ -2,7 +2,8 @@
 
 ## Prerequisites:
 Run the following query on `mariadb` instance:
-```LOAD DATA INFILE '/usr/data/MOCK_DATA.csv' 
+```
+LOAD DATA INFILE '/usr/data/MOCK_DATA.csv' 
 INTO TABLE Products 
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
