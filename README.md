@@ -12,7 +12,7 @@ IGNORE 1 ROWS;
 ```
 
 ### pp1 
-Simple select query, abtract repository algebra, generic effectful implementation, runnable app
+Simple select query, abstract repository algebra, generic effectful implementation, runnable app
 
 ### pp2 
 Running queries in parallel and combining the results
