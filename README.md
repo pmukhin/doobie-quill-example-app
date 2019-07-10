@@ -1,5 +1,14 @@
 # Workshop on `doobie` and `cats-effect`
 
+## Prerequisites:
+Run the following query on `mariadb` instance:
+```LOAD DATA INFILE '/usr/data/MOCK_DATA.csv' 
+INTO TABLE Products 
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;```
+
 ### pp1 
 Simple select query, abtract repository algebra, generic effectful implementation, runnable app
 
