@@ -18,13 +18,6 @@ object Application extends App {
 
   def putStrLn(v: Any) = IO.pure(println(v.toString))
 
-  val xa = Transactor.fromDriverManager[IO](
-    "org.postgresql.Driver",
-    "jdbc:postgresql:world",
-    "postgres",
-    ""
-  )
-
   val config = HikariConfig(
     "jdbc:mysql://127.0.0.1:3306/doobie-pp",
     "doobie",
@@ -32,10 +25,10 @@ object Application extends App {
     4
   )
 
-  val transactor: HikariTransactor[IO] =
+  val xa: HikariTransactor[IO] =
     HikariTransactor.apply[IO](new HikariDataSource(config), ec, ec)
 
-  val productRepository = new DoobieProductRepository[IO](transactor)
+  val productRepository = new DoobieProductRepository[IO](xa)
 
   val ioProgram = for {
     prod1Fiber <- productRepository.findById(2).start
