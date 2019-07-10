@@ -1,31 +1,20 @@
 package com.tookitaki.pp3_write
 
-import java.util.concurrent.Executors
-
-import cats.data.{ EitherT, OptionT }
+import cats.data.EitherT
 import cats.effect.IO
-import cats.syntax.all._
 import com.tookitaki.HikariConfig
 import com.tookitaki.pp1_basics.DoobieProductRepository
+import com.tookitaki.util._
 import com.zaxxer.hikari.HikariDataSource
 import doobie.hikari.HikariTransactor
-import doobie.util.transactor.Transactor
 
 import scala.concurrent.ExecutionContext
 
 object Application extends App {
-  implicit val ec = Executors.newFixedThreadPool(8)
-  implicit val cs = IO.contextShift(ExecutionContext.global)
+  implicit val ec = ExecutionContext.fromExecutor(exec)
+  implicit val cs = IO.contextShift(ec)
 
-  def putStrLn(v: Any)          = IO.pure(println(v.toString))
   def info(m: String): IO[Unit] = IO.pure(println(m))
-
-  val xa = Transactor.fromDriverManager[IO](
-    "org.postgresql.Driver",
-    "jdbc:postgresql:world",
-    "postgres",
-    ""
-  )
 
   val config = HikariConfig(
     "jdbc:mysql://127.0.0.1:3306/doobie-pp",
@@ -34,17 +23,11 @@ object Application extends App {
     4
   )
 
-  val executionContext = ExecutionContext.fromExecutor(ec)
+  val xa: HikariTransactor[IO] =
+    HikariTransactor.apply[IO](new HikariDataSource(config), ec, ec)
 
-  val transactor: HikariTransactor[IO] =
-    HikariTransactor.apply[IO](
-      new HikariDataSource(config),
-      executionContext,
-      executionContext
-    )
-
-  val productRepository      = new DoobieProductRepository[IO](transactor)
-  val writeProductRepository = new DoobieWriteProductRepository[IO](transactor)
+  val productRepository      = new DoobieProductRepository[IO](xa)
+  val writeProductRepository = new DoobieWriteProductRepository[IO](xa)
 
   val id = 6
 
@@ -69,10 +52,11 @@ object Application extends App {
           )
   } yield eff // voila
 
+  val putStrLn = com.tookitaki.util.putStrLn[IO]
+
   ioProgram.value
+    .flatMap {
+      _.fold(e => putStrLn(s"error: $e"), _ => putStrLn("successfully updated product"))
+    }
     .unsafeRunSync()
-    .fold(
-      e => println(s"error: $e"),
-      _ => println("successfully updated product")
-    )
 }
