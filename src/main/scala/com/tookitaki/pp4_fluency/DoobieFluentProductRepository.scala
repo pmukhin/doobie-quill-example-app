@@ -1,15 +1,16 @@
 package com.tookitaki.pp4_fluency
 
-import cats.Applicative
 import cats.effect.Async
 import cats.syntax.all._
 import com.tookitaki.pp1_basics.{ Product, ProductRepository }
+import com.tookitaki.pp3_write.WriteProductRepository
 import doobie.util.transactor.Transactor
 
 class DoobieFluentProductRepository[F[_]](xa: Transactor[F])(
   implicit
   F: Async[F]
-) extends ProductRepository[F] {
+) extends ProductRepository[F]
+    with WriteProductRepository[F] {
 
   import doobie.implicits._
   import io.getquill._
@@ -28,4 +29,11 @@ class DoobieFluentProductRepository[F[_]](xa: Transactor[F])(
 
   override def findById(id: Long): F[Option[Product]] =
     run(makeQ(id)).transact[F](xa).map(_.headOption)
+
+  override def update(p: Product): F[Either[String, Unit]] =
+    run(query[Product].filter(_.id == lift(p.id)).update(lift(p)))
+      .transact[F](xa)
+      .map { r =>
+        if (r == 1) ().asRight else "0 rows updated".asLeft
+      }
 }

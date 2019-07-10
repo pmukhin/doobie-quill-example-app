@@ -24,15 +24,19 @@ object Application extends App {
 
   val productRepository = new DoobieFluentProductRepository[IO](xa)
 
+  import cats.syntax.all._
+
   val ioProgram = for {
     prod1Fiber <- productRepository.findById(2).start
     prod2Fiber <- productRepository.findById(3).start
-    prod3Fiber <- productRepository.findById(4).start
-    prod1      <- prod3Fiber.join
+    prod3      <- productRepository.findById(4)
     prod2      <- prod2Fiber.join
-    prod3      <- prod1Fiber.join
+    prod1      <- prod1Fiber.join
     _          <- putStrLn[IO]((prod1, prod2, prod3))
-  } yield ()
+  } yield
+    prod3.map { p =>
+      productRepository.update(p) *> IO()
+    }
 
   ioProgram.unsafeRunSync()
 }

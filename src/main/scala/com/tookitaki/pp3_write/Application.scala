@@ -52,7 +52,7 @@ object Application extends App {
           )
   } yield eff // voila
 
-  val putStrLn = com.tookitaki.util.putStrLn[IO]
+  val putStrLn = com.tookitaki.util.putStrLn[IO] _
 
   ioProgram.value
     .flatMap {

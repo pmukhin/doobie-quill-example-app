@@ -27,7 +27,7 @@ object Application extends App {
 
   val productRepository = new DoobieProductRepository[IO](xa)
 
-  val putStrLn = com.tookitaki.util.putStrLn[IO]
+  val putStrLn = com.tookitaki.util.putStrLn[IO] _
 
   val ioProgram = for {
     prod1Fiber <- productRepository.findById(2).start
@@ -36,7 +36,7 @@ object Application extends App {
     prod1      <- prod3Fiber.join
     prod2      <- prod2Fiber.join
     prod3      <- prod1Fiber.join
-    _          <- putStrLn[IO]((prod1, prod2, prod3))
+    _          <- putStrLn((prod1, prod2, prod3))
   } yield ()
 
   ioProgram.unsafeRunSync()
