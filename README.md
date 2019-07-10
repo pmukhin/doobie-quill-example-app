@@ -7,7 +7,8 @@ INTO TABLE Products
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;```
+IGNORE 1 ROWS;
+```
 
 ### pp1 
 Simple select query, abtract repository algebra, generic effectful implementation, runnable app
