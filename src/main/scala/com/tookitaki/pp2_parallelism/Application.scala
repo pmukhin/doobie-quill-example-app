@@ -12,8 +12,9 @@ import doobie.util.transactor.Transactor
 import scala.concurrent.ExecutionContext
 
 object Application extends App {
-  implicit val ec = Executors.newFixedThreadPool(8)
-  implicit val cs = IO.contextShift(ExecutionContext.fromExecutor(ec))
+  implicit val ec = ExecutionContext
+    .fromExecutor(Executors.newFixedThreadPool(8))
+  implicit val cs = IO.contextShift(ec)
 
   def putStrLn(v: Any) = IO.pure(println(v.toString))
 
@@ -31,14 +32,8 @@ object Application extends App {
     4
   )
 
-  val executionContext = ExecutionContext.fromExecutor(ec)
-
   val transactor: HikariTransactor[IO] =
-    HikariTransactor.apply[IO](
-      new HikariDataSource(config),
-      executionContext,
-      executionContext
-    )
+    HikariTransactor.apply[IO](new HikariDataSource(config), ec, ec)
 
   val productRepository = new DoobieProductRepository[IO](transactor)
 

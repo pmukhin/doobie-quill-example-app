@@ -14,9 +14,8 @@ class DoobieFluentProductRepository[F[_]: Applicative](xa: Transactor[F])(
 
   import doobie.implicits._
   import io.getquill._
-  import doobie.quill.DoobieContext
 
-  val dc = new DoobieContext.MySQL(Literal)
+  val dc = new doobie.quill.DoobieContext.MySQL(Literal)
   import dc._
 
   implicit val productSchemaMeta =
@@ -26,7 +25,6 @@ class DoobieFluentProductRepository[F[_]: Applicative](xa: Transactor[F])(
     quote {
       query[Product]
         .filter(_.id == lift(id))
-        .distinct
     }
 
   override def findById(id: Long): F[Option[Product]] =
