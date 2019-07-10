@@ -1,10 +1,9 @@
 package com.tookitaki.pp4_fluency
 
-import cats.{ Applicative, Comonad }
+import cats.Applicative
 import cats.effect.Async
 import cats.syntax.all._
-import com.tookitaki.pp1_basics.Product
-import com.tookitaki.pp1_basics.ProductRepository
+import com.tookitaki.pp1_basics.{ Product, ProductRepository }
 import doobie.util.transactor.Transactor
 
 class DoobieFluentProductRepository[F[_]: Applicative](xa: Transactor[F])(
