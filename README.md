@@ -1,4 +1,4 @@
-# Presentation about `doobie` and `cats-effect`
+# Workshop on `doobie` and `cats-effect`
 
 ### pp1 
 Simple select query, abtract repository algebra, generic effectful implementation, runnable app
