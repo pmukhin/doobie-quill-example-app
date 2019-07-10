@@ -6,7 +6,7 @@ import cats.syntax.all._
 import com.tookitaki.pp1_basics.{ Product, ProductRepository }
 import doobie.util.transactor.Transactor
 
-class DoobieFluentProductRepository[F[_]: Applicative](xa: Transactor[F])(
+class DoobieFluentProductRepository[F[_]](xa: Transactor[F])(
   implicit
   F: Async[F]
 ) extends ProductRepository[F] {
