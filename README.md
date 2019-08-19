@@ -16,11 +16,6 @@ Update queries
 ### pp4
 Fluent compile-time query builder using Quill and Doobie 
 
-## Links
-- https://tpolecat.github.io/doobie/ - Doobie official website
-- https://typelevel.org/cats/ - Cats official website
-- https://typelevel.org/cats-effect/ - Cats Effect official website
-
 ### Prerequisites:
 Run the following query on `mariadb` instance:
 ```
@@ -31,3 +26,9 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
+
+## Links
+- https://tpolecat.github.io/doobie/ - Doobie official website
+- https://typelevel.org/cats/ - Cats official website
+- https://typelevel.org/cats-effect/ - Cats Effect official website
+
