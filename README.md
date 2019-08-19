@@ -2,7 +2,7 @@
 A sample project to show examples of using `doobie`.
 
 ## Components
-Every component demonstrates a particular idea or a component:
+Every component demonstrates a particular idea or a usecase:
 
 ### pp1 
 Simple select query, abstract repository algebra, generic effectful implementation, runnable app
