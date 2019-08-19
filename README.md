@@ -1,5 +1,5 @@
 # Workshop on `doobie` and `cats-effect`
-A sample project to show examples of using `doobie`.
+A sample project to show examples of using `doobie` along with `quill`.
 
 ## Components
 Every component demonstrates a particular idea or a usecase:
