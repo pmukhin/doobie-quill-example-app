@@ -28,10 +28,8 @@ object Application extends App {
     HikariTransactor.apply[IO](new HikariDataSource(config), ec, ec)
 
   val productRepository = new DoobieFluentProductRepository[IO](xa)
-
-  val putStrLn = com.tookitaki.util.putStrLn[IO] _
-
-  val fetchProduct = productRepository.findById _
+  val putStrLn          = com.tookitaki.util.putStrLn[IO] _
+  val fetchProduct      = productRepository.findById _
 
   val ioProgram =
     fetchProduct(2).start.bracket(
@@ -44,5 +42,5 @@ object Application extends App {
         )(_.cancel)
     )(_.cancel)
 
-  ioProgram.flatMap(putStrLn).unsafeRunSync()
+  ioProgram.flatMap(putStrLn).unsafeRunSync
 }
