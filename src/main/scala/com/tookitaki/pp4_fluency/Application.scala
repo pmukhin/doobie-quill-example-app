@@ -24,8 +24,6 @@ object Application extends App {
   val productRepository = new DoobieFluentProductRepository[IO](xa)
   val putStrLn          = com.tookitaki.util.putStrLn[IO] _
 
-  import cats.syntax.all._
-
   val ioProgram = for {
     prod1Fiber <- productRepository.findById(2).start
     prod2Fiber <- productRepository.findById(3).start

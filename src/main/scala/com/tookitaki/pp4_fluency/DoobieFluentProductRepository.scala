@@ -1,6 +1,6 @@
 package com.tookitaki.pp4_fluency
 
-import cats.effect.Async
+import cats.effect.{ Async, Bracket }
 import cats.syntax.all._
 import com.tookitaki.pp1_basics.{ Product, ProductRepository }
 import com.tookitaki.pp3_write.WriteProductRepository
@@ -8,7 +8,8 @@ import doobie.util.transactor.Transactor
 
 class DoobieFluentProductRepository[F[_]](xa: Transactor[F])(
   implicit
-  F: Async[F]
+  F: Async[F],
+  ev: Bracket[F, Throwable]
 ) extends ProductRepository[F]
     with WriteProductRepository[F] {
 

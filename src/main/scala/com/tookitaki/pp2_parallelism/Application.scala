@@ -4,7 +4,7 @@ import java.util.concurrent.Executors
 
 import cats.effect.IO
 import com.tookitaki.HikariConfig
-import com.tookitaki.pp1_basics.DoobieProductRepository
+import com.tookitaki.pp4_fluency.DoobieFluentProductRepository
 import com.zaxxer.hikari.HikariDataSource
 import doobie.hikari.HikariTransactor
 
@@ -22,22 +22,27 @@ object Application extends App {
     4
   )
 
+  import cats.implicits._
+
   val xa: HikariTransactor[IO] =
     HikariTransactor.apply[IO](new HikariDataSource(config), ec, ec)
 
-  val productRepository = new DoobieProductRepository[IO](xa)
+  val productRepository = new DoobieFluentProductRepository[IO](xa)
 
   val putStrLn = com.tookitaki.util.putStrLn[IO] _
 
-  val ioProgram = for {
-    prod1Fiber <- productRepository.findById(2).start
-    prod2Fiber <- productRepository.findById(3).start
-    prod3Fiber <- productRepository.findById(4).start
-    prod1      <- prod3Fiber.join
-    prod2      <- prod2Fiber.join
-    prod3      <- prod1Fiber.join
-    _          <- putStrLn((prod1, prod2, prod3))
-  } yield ()
+  val fetchProduct = productRepository.findById _
 
-  ioProgram.unsafeRunSync()
+  val ioProgram =
+    fetchProduct(2).start.bracket(
+      prod1Fiber =>
+        fetchProduct(3).start.bracket(
+          prod2Fiber =>
+            fetchProduct(4).start.bracket(
+              prod3Fiber => (prod1Fiber.join, prod2Fiber.join, prod3Fiber.join).tupled
+            )(_.cancel)
+        )(_.cancel)
+    )(_.cancel)
+
+  ioProgram.flatMap(putStrLn).unsafeRunSync()
 }
